@@ -1,0 +1,440 @@
+/* comment bootsnip */
+
+body {
+    background: #fafafa;
+}
+
+.widget-area.blank {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+body .no-padding {
+    padding: 0;
+}
+
+.widget-area {
+    background-color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+    float: left;
+    margin-top: 30px;
+    padding: 25px 30px;
+    position: relative;
+    width: 100%;
+}
+
+.status-upload {
+    background: none repeat scroll 0 0 #f5f5f5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    float: left;
+    width: 100%;
+}
+
+.status-upload form {
+    float: left;
+    width: 100%;
+}
+
+.status-upload form textarea {
+    background: none repeat scroll 0 0 #fff;
+    border: medium none;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    color: #777777;
+    float: left;
+    font-family: Lato;
+    font-size: 14px;
+    height: 142px;
+    letter-spacing: 0.3px;
+    padding: 20px;
+    width: 100%;
+    resize: vertical;
+    outline: none;
+    border: 1px solid #F2F2F2;
+}
+
+.status-upload ul {
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 0 0 15px;
+    width: auto;
+}
+
+.status-upload ul>li {
+    float: left;
+}
+
+.status-upload ul>li>a {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    color: #777777;
+    float: left;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0 10px 10px;
+    text-align: center;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 30px;
+    cursor: pointer;
+}
+
+.status-upload ul>li>a:hover {
+    background: none repeat scroll 0 0 #606060;
+    color: #fff;
+}
+
+.status-upload form button {
+    border: medium none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    float: right;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    margin-right: 9px;
+    margin-top: 9px;
+    padding: 6px 15px;
+}
+
+.dropdown>a>span.green:before {
+    border-left-color: #2dcb73;
+}
+
+.status-upload form button>i {
+    margin-right: 7px;
+}
+
+
+/* js for comments bootsnipp
+$(document).ready(function(){
+
+    
+    $("[data-toggle=tooltip]").tooltip();
+});
+
+
+*/
+
+
+/*
+card with comments 
+ */
+
+.card-header {
+    padding: 9px 16px;
+}
+
+#spacing-of-cards {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#card-to-float {
+    float: left;
+    margin-left: 10px;
+}
+
+
+/* Css for 3 dots */
+
+* {
+    z-index: 0;
+}
+
+input {
+    z-index: 0;
+}
+
+body {
+    padding-top: 10px;
+    z-index: 0;
+}
+
+.container {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.header {
+    background: #a30000;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #a30000 0%, #d50000 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a30000 0%, #d50000 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a30000 0%, #d50000 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a30000', endColorstr='#d50000', GradientType=0);
+    /* IE6-9 */
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+footer {
+    padding-top: 100px;
+}
+
+#errorToolbox {
+    position: absolute;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    display: none;
+    padding: 8px;
+    background-color: #403537;
+    z-index: 9999;
+    color: white;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.40);
+}
+
+.container-table {
+    display: table;
+}
+
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navbar-wrapper {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.navbar-xs {
+    min-height: 40px;
+    height: 40px;
+    z-index: 3000;
+}
+
+.navbar-xs .navbar-brand {
+    padding: 0px 12px;
+    font-size: 16px;
+    line-height: 40px;
+    z-index: 3000;
+}
+
+.navbar-xs .navbar-nav>li>a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 37px;
+    z-index: 3000;
+}
+
+
+/*
+ * Override the bootstrap modal class z-index to ensure it is always above the nav
+ * usually only has a problem with the second nav (not the main website nav)
+ */
+
+.modal {
+    z-index: 5000 !important;
+}
+
+#topBar {
+    margin-top: 5px;
+    width: 850px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.linkButton {
+    width: auto;
+    float: left;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #E0DFE5;
+    margin-top: 0px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.linkButton img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: central;
+}
+
+.commentContainer {
+    background-color: #E5E1E1;
+    padding: 8px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.rowItem {
+    border-bottom: solid thin #7E7C7F !important;
+    margin-bottom: 10px !important;
+}
+
+.bitsTag {
+    font-size: x-small;
+    font-weight: bold;
+    background-color: #A40000;
+    color: white;
+    border: solid thin black;
+    border-radius: 5px;
+    padding: 3px;
+    width: 115px;
+    text-align: center;
+    vertical-align: bottom;
+    bottom: 0;
+}
+
+.appContainer {
+    background-color: #f0f0f0;
+    width: 200px;
+    height: 120px;
+    border: solid thin #858585;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    cursor: hand;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+
+.appContainer:hover {
+    background-color: #d7d7d7;
+}
+
+.appContainer .title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.appContainer .appID {
+    text-align: center;
+}
+
+.appIDContainer {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.data-container {
+    background-color: #323436;
+    padding: 10px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.data-container>p.title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.data-container-table {
+    color: black !important;
+}
+
+.data-container-table>tbody>tr:nth-child(even) {
+    background-color: #c4c4c4;
+}
+
+.data-container-table>tbody>tr:not(:first-child):hover {
+    opacity: 1;
+    background-color: #e1e1e1;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
+}
+
+.context-menu:after {
+    content: '\2807';
+    font-size: 20px;
+    cursor: pointer;
+    cursor: hand;
+    pointer-events: all;
+}
+
+td.context-menu:after {
+    float: right;
+}
+
+p.contextMenu:after>span {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+h1.context-menu:after,
+h2.context-menu:after,
+h3.context-menu:after,
+h4.context-menu:after,
+h5.context-menu:after {
+    margin-left: 30px;
+}
+
+.context-menu-container {
+    background-color: white;
+    z-index: 1000 !important;
+    border-radius: 5px;
+    position: absolute;
+    display: none;
+    border: solid thin black;
+    padding: 3px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.18);
+    min-width: 90px;
+}
+
+.context-menu-container>ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.context-menu-container>ul>li {
+    padding: 5px;
+    cursor: hand;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.context-menu-container>ul>li:hover {
+    background-color: #c4c4c4;
+}
